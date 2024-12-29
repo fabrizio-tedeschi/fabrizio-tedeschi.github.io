@@ -1,3 +1,4 @@
+/* Mobile-first design adjustments */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -9,26 +10,31 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+
 header {
     background-color: #282c34;
     color: white;
     padding: 20px 0;
 }
+
 header h1 {
     margin: 0;
     font-size: 2.5rem;
 }
+
 header p {
     font-size: 1.2rem;
     margin-top: 10px;
 }
+
 main {
     flex: 1;
     padding: 20px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 20px;
 }
+
 section {
     background: white;
     padding: 20px;
@@ -37,6 +43,7 @@ section {
     text-align: left;
     position: relative;
 }
+
 section img {
     width: 50px;
     height: 50px;
@@ -44,9 +51,11 @@ section img {
     top: 20px;
     right: 20px;
 }
+
 .about {
     text-align: left;
 }
+
 .about img {
     float: left;
     margin-right: 15px;
@@ -56,6 +65,7 @@ section img {
     object-fit: cover;
     position: static;
 }
+
 footer {
     margin-top: 30px;
     padding: 10px;
@@ -66,10 +76,19 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
 a {
     color: #0066cc;
     text-decoration: none;
 }
+
 a:hover {
     text-decoration: underline;
+}
+
+/* Media queries for larger screens */
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
