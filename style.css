@@ -3,7 +3,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background-color: #4169e1;
     color: #333;
     text-align: center;
     display: flex;
@@ -12,8 +12,8 @@ body {
 }
 
 header {
-    background-color: #FF7518;
-    color: white;
+    background-color: white;
+    color: gray;
     padding: 20px 0;
 }
 
@@ -23,7 +23,7 @@ header h1 {
 }
 
 header p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-top: 10px;
 }
 
@@ -42,6 +42,7 @@ section {
     border-radius: 8px;
     text-align: left;
     position: relative;
+    font-size: 1.1rem;
 }
 
 section img {
@@ -69,7 +70,7 @@ section img {
 footer {
     margin-top: 30px;
     padding: 10px;
-    background-color: #FF7518;
+    background-color: #4169e1;
     color: white;
     font-size: 0.9rem;
     position: relative;
@@ -78,7 +79,7 @@ footer {
 }
 
 a {
-    color: #0066cc;
+    color: #ff8c00fd;
     text-decoration: none;
 }
 
